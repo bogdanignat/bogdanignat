@@ -4,7 +4,6 @@ const username = document.querySelector('#username')
 const saveScoreBtn = document.querySelector('#saveScoreBtn')
 const finalScore = document.querySelector('#finalScore')
 console.log(localStorage)
-
 finalScore.innerText = scorePoints
 
 // get the value of the input(by user)

@@ -101,13 +101,16 @@ body {
   justify-content: center;
   position: absolute;
   margin: auto;
-  top: 30%;
-  left: 45%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #message-home h4 {
   color: #141b29;
   text-shadow: 0 0 3px #c0f7b7, 0 0 5px #0000ff;
+  text-align: center;
+  margin: auto;
 }
 /* end of message module */
 
@@ -120,7 +123,7 @@ body {
   visibility: hidden;
 }
 
-.info-div {
+.learning-div {
   visibility: hidden;
 }
 

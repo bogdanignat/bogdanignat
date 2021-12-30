@@ -4,7 +4,7 @@ let eventCheckBox3 = document.querySelector('.checkbox.thrd')
 
 eventCheckBox1.addEventListener('change', function checkFirst() {
   if (this.checked) {
-    document.querySelector('.info-div').style.visibility = 'visible'
+    document.querySelector('.learning-div').style.visibility = 'visible'
     document.querySelector('#message-home').style.visibility = 'hidden'
     document.querySelector('#game-module').style.visibility = 'hidden'
     document.querySelector('#after_submit').style.visibility = 'hidden'
@@ -22,7 +22,7 @@ eventCheckBox2.addEventListener('change', function checkFirst() {
     document.getElementById('button').style.visibility = 'visible'
     document.getElementById('play-mess').style.visibility = 'visible'
     document.querySelector('#message-home').style.visibility = 'hidden'
-    document.querySelector('.info-div').style.visibility = 'hidden'
+    document.querySelector('.learning-div').style.visibility = 'hidden'
     document.querySelector('#message').style.visibility = 'hidden'
     document.getElementById('container_hi').style.visibility = 'hidden'
     console.log('eventCheckBox2')
@@ -37,7 +37,7 @@ eventCheckBox3.addEventListener('change', function checkFirst() {
     document.getElementById('button').style.visibility = 'hidden'
     document.getElementById('play-mess').style.visibility = 'hidden'
     document.querySelector('#message-home').style.visibility = 'hidden'
-    document.querySelector('.info-div').style.visibility = 'hidden'
+    document.querySelector('.learning-div').style.visibility = 'hidden'
     document.querySelector('#message').style.visibility = 'hidden'
     document.querySelector('#after_submit').style.visibility = 'hidden'
 
