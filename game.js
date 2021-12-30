@@ -1,4 +1,5 @@
 import { answer } from './generateAnswers.js'
+let scorePoints = 0
 
 document.getElementById('button').onclick = function check() {
   //get the answers from the input text cases
@@ -73,8 +74,9 @@ document.getElementById('button').onclick = function check() {
   if (correct == 10) {
     range = 1
   }
-  //score display
+  //get score display
   calculateScore()
+  console.log(scorePoints)
 
   //make the after_submit vizible and hide the rest
   document.getElementById('after_submit').style.visibility = 'visible'
@@ -87,12 +89,14 @@ document.getElementById('button').onclick = function check() {
   document.getElementById('number_correct').innerHTML =
     'You got ' + correct + ' correct.'
   document.getElementById('picture').src = pictures[range]
+
+  return scorePoints
 }
 
 //score calculate
 
 function calculateScore() {
-  const points = 100
+  const points = 10
   var question1 = document.quiz.question1.value
   var question2 = document.quiz.question2.value
   var question3 = document.quiz.question3.value
@@ -105,7 +109,6 @@ function calculateScore() {
   var question10 = document.quiz.question10.value
 
   var correct = 0
-  var scorePoints = 0
 
   if (question1 == answer[0]) {
     correct++
@@ -139,6 +142,7 @@ function calculateScore() {
   }
 
   scorePoints = correct * points
-  localStorage.setItem('mostRecentScore', scorePoints)
   document.getElementById('finalScore').innerHTML = scorePoints
 }
+
+export { scorePoints }

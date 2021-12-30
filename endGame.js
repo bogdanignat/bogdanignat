@@ -1,10 +1,11 @@
+import { scorePoints } from './game.js'
+
 const username = document.querySelector('#username')
 const saveScoreBtn = document.querySelector('#saveScoreBtn')
 const finalScore = document.querySelector('#finalScore')
-const mostRecentScore = localStorage.getItem('mostRecentScore')
 console.log(localStorage)
 
-finalScore.innerText = mostRecentScore
+finalScore.innerText = scorePoints
 
 // get the value of the input(by user)
 username.addEventListener('keyup', () => {
@@ -20,7 +21,7 @@ function saveHighScore(e) {
   e.preventDefault()
 
   const score = {
-    score: mostRecentScore,
+    score: scorePoints,
     name: username.value,
   }
 
