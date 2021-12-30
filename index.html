@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/images/earth2.png" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="playButtons.css" />
+    <link rel="stylesheet" href="learning.css" />
+    <link rel="stylesheet" href="game.css" />
+    <link rel="stylesheet" href="highscores.css" />
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-search-pseudo-elements
+    ></script>
+    <title>Capitals of the World</title>
+  </head>
+  <body>
+    <div class="main">
+      <!-- nav bar -->
+      <nav class="nav-bar">
+        <!-- title in nav bar -->
+        <ul class="nav-bar-menu">
+          <a href="index.html">Home</a>
+          <a href="news.asp">News</a>
+          <a href="contact.asp">Contact</a>
+        </ul>
+        <div id="nav-bar-title">
+          <i id="learn" class="fas fa-chalkboard-teacher"></i>Learn the Capitals
+          of the World!!
+        </div>
+        <ul class="nav-bar-menu">
+          <a id="about" href="about.asp">About</a>
+        </ul>
+      </nav>
+      <!-- end of nav bar -->
+      <div id="message-home"><h4>this is goind to be a text</h4></div>
+      <!-- the LEARNING module -->
+      <div class="info-div">
+        <img id="background-learn-module" src="/images/earth.png" alt="" />
+        <div id="continents">SELECT CONTINENT</div>
+        <select id="continents-id"></select>
+        <br />
+        <div id="states">SELECT STATE</div>
+        <select id="states-id"></select>
+        <br />
+        <div>
+          <div id="capitals">THE CAPITAL IS:</div>
+          <div id="capitals-id"></div>
+        </div>
+      </div>
+      <!-- the end of LEARNING module -->
+
+      <!--THIS PART IS FOR game DIV-->
+      <div id="game-module">
+        <p id="play-mess">LETS PLAY!!!</p>
+        <form id="quiz" name="quiz">
+          <div class="question" id="capital1">c1</div>
+          <input id="textbox1" type="text" name="question1" />
+          <div class="question" id="capital2">c2</div>
+          <input id="textbox2" type="text" name="question2" />
+          <div class="question" id="capital3">c3</div>
+          <input id="textbox3" type="text" name="question3" />
+          <div class="question" id="capital4">c4</div>
+          <input id="textbox4" type="text" name="question4" />
+          <div class="question" id="capital5">c5</div>
+          <input id="textbox5" type="text" name="question5" />
+          <div class="question" id="capital6">c6</div>
+          <input id="textbox6" type="text" name="question6" />
+          <div class="question" id="capital7">c7</div>
+          <input id="textbox7" type="text" name="question7" />
+          <div class="question" id="capital8">c8</div>
+          <input id="textbox8" type="text" name="question8" />
+          <div class="question" id="capital9">c9</div>
+          <input id="textbox9" type="text" name="question9" />
+          <div class="question" id="capital10">c10</div>
+          <input id="textbox10" type="text" name="question10" />
+        </form>
+        <div class="check-button">
+          <input id="button" type="button" value="check your answare" />
+        </div>
+      </div>
+
+      <!-- this is going to change after the button check is clicked  -->
+      <div id="after_submit">
+        <p id="message"></p>
+        <p id="number_correct"></p>
+        <img id="picture" />
+        <div class="container_end">
+          <div id="end" class="flex-center flex-column">
+            <p id="your_score">YOUR SCORE</p>
+            <p id="finalScore">0</p>
+            <form class="end-form-container">
+              <h2 id="end-text">enter your name below to save your score!</h2>
+              <input
+                type="text"
+                name="name"
+                id="username"
+                placeholder="Enter your name"
+              />
+              <button class="btn" id="saveScoreBtn" type="submit" disabled>
+                Save
+              </button>
+            </form>
+            <a class="end_btn" href="/" class="btn"
+              >Go Home<i class="fas fa-home"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!--END OF game DIV-->
+
+      <!-- buttons on the bottom of the page -->
+      <div class="section mx-auto text-center slider-height-padding">
+        <!-- use on the input below, prop 'checked' if u need the checkbox to be checked -->
+        <input class="checkbox frst" type="radio" id="slide-1" name="slider" />
+        <label for="slide-1"></label>
+        <input class="checkbox scnd" type="radio" name="slider" id="slider-2" />
+        <label for="slider-2"></label>
+        <input class="checkbox thrd" type="radio" name="slider" id="slider-3" />
+        <label for="slider-3"></label>
+      </div>
+      <!-- end of buttons on the bottom of the page -->
+      <!-- high scores module -->
+      <div id="container_hi" class="flex-center flex-column">
+        <div id="highScores">
+          <h1 id="finalScore">Leaderboard</h1>
+          <ul id="highScoresList"></ul>
+          <p>
+            Click the button to delete the scores <b>(maxim 10 entries)</b>:
+          </p>
+          <button onclick="deleteItem()">Delete scores</button>
+        </div>
+      </div>
+      <!-- end of high scores module -->
+    </div>
+    <!-- here ends main div -->
+
+    <script type="module" src="learning.js"></script>
+    <script type="module" src="game.js"></script>
+    <script type="module" src="generateQuestions.js"></script>
+    <script type="module" src="generateAnswers.js"></script>
+    <script src="playButtons.js"></script>
+    <script type="module" src="endGame.js"></script>
+    <script src="highscores.js"></script>
+  </body>
+</html>

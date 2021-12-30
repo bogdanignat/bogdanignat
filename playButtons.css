@@ -1,0 +1,80 @@
+/* the bottom buttons */
+[type='radio']:checked,
+[type='radio']:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.checkbox:checked + label,
+.checkbox:not(:checked) + label {
+  position: relative;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  margin-right: 6px;
+  margin-left: 6px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #bdc3c7;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  background-image: url(/images/learn.jpg);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  animation: border-transform 6s linear infinite alternate forwards;
+  animation-play-state: paused;
+}
+
+.checkbox.scnd + label {
+  background-image: url(/images/game.jpg);
+}
+
+.checkbox.thrd + label {
+  background-image: url(/images/highScore.jpg);
+}
+
+.checkbox:checked + label {
+  box-shadow: 0 8px 25px 0 rgba(15, 39, 112, 0.3);
+  transform: scale(1.4);
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  animation-play-state: running;
+}
+
+@keyframes border-transform {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46% / 55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46% / 49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62% / 49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45% / 61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%;
+  }
+}
+
+/* the bottom buttons position */
+.slider-height-padding {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 70%;
+  max-width: 30%;
+  margin: auto;
+}

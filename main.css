@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+/* MAIN PAGE/DIV */
+.main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(
+    ellipse farthest-corner at 50% 50%,
+    #c0f7b7 0%,
+    #5ac994 15%,
+    #124143 40%,
+    #141b29 70%
+  );
+}
+
+/*** NAV BAR ***/
+.nav-bar {
+  background: linear-gradient(90deg, #141b29 10%, #124143 60%, #141b29 100%);
+  width: 100%;
+  height: 60px;
+  position: relative;
+  top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* title in nav bar */
+#nav-bar-title {
+  display: flex;
+  align-items: center;
+  color: #c0f7b7;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+/* fontawesome learn icon */
+#learn {
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 10px;
+}
+/* end of title in nav bar */
+
+/* nav-bar meniu(home/contact...) */
+.nav-bar-menu {
+  /* hide the bullets in the UL -> list-style-type: none;*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #c0f7b7;
+  align-items: center;
+  font-size: 16px;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+.nav-bar-menu a {
+  color: #c0f7b7;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-bar-menu a:hover {
+  background-color: #124143;
+  border-radius: 8px;
+}
+/* end of nav-bar meniu(home/...) */
+
+/*the right nav-bar-menu (about)*/
+#about {
+  color: #c0f7b7;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding: 14px 16px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#about:hover {
+  background-color: #124143;
+  border-radius: 8px;
+}
+/*the right nav-bar-menu (about)*/
+/*** end of NAV BAR ***/
+
+/* message module */
+#message-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  top: 30%;
+  left: 45%;
+}
+#message-home h4 {
+  color: #141b29;
+  text-shadow: 0 0 3px #c0f7b7, 0 0 5px #0000ff;
+}
+/* end of message module */
+
+/* make the modules hidden */
+#game-module {
+  visibility: hidden;
+}
+
+#after_submit {
+  visibility: hidden;
+}
+
+.info-div {
+  visibility: hidden;
+}
+
+#container_hi {
+  visibility: hidden;
+}

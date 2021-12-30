@@ -1,0 +1,138 @@
+/* this is the quiz part*/
+
+#play-mess {
+  color: #ddeb9d;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#game-module {
+  display: flex;
+}
+
+/* questions and answers */
+#quiz {
+  height: 400px;
+  top: 20%;
+  text-align: center;
+  flex-direction: column;
+  columns: 2;
+  /* center content */
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.question {
+  color: #ddeb9d;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* end of questions and answers */
+
+/* the submit button */
+.check-button {
+  height: 10px;
+  position: absolute;
+  bottom: 21%;
+  width: 100%;
+  text-align: center;
+}
+
+#button {
+  background: #124143;
+  border: 1px solid #c0f7b7;
+  border-radius: 5px;
+  padding: 10px;
+  color: #c0f7b7;
+  font-size: 16px;
+  transition-duration: 0.5s;
+  margin-top: 15px;
+}
+#button:hover {
+  background: white;
+  border: 1px solid green;
+  color: black;
+  cursor: pointer;
+}
+/* end of the submit button */
+
+/* this part is for after submitting */
+#after_submit {
+  margin-left: 10px;
+  padding: 10px 20px 10px 20px;
+  top: 10%;
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#message {
+  height: 20px;
+  position: absolute;
+  color: #ddeb9d;
+  top: 15%;
+  text-align: center;
+  font-size: 20px;
+}
+
+#number_correct {
+  height: 20px;
+  position: absolute;
+  color: #ddeb9d;
+  top: 10%;
+  text-align: center;
+  font-size: 20px;
+}
+
+#picture {
+  width: 300px;
+  height: 170px;
+  position: absolute;
+  top: 23%;
+}
+
+#mc {
+  display: inline;
+}
+
+.container_end {
+  height: 100px;
+  position: absolute;
+  bottom: 35%;
+}
+
+#your_score {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+#finalScore {
+  font-size: 20px;
+  color: red;
+  margin: 0;
+  padding: 0;
+}
+
+#end-text {
+  color: #ddeb9d;
+}
+
+.end_btn {
+  color: #ddeb9d;
+  font-size: 20px;
+  background-color: black;
+}

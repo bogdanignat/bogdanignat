@@ -1,0 +1,106 @@
+.info-div {
+  /* dimensions for the div */
+  height: 400px;
+  width: 600px;
+  text-align: center;
+  /* center the info-div */
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* align all items in the center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* background image and position  */
+#background-learn-module {
+  height: 100%;
+  width: 120%;
+  border-radius: 50%;
+  position: fixed;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+#continents {
+  display: flex;
+  justify-content: center;
+  color: #c0f7b7;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  border-radius: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 2;
+}
+
+#states {
+  display: flex;
+  justify-content: center;
+  color: #c0f7b7;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 2px;
+  padding-bottom: 10px;
+  z-index: 2;
+}
+
+#capitals {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: #c0f7b7;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 2px;
+  padding-bottom: 10px;
+  z-index: 2;
+}
+
+#capitals-id {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #c0f7b7;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+  z-index: 2;
+}
+
+select {
+  display: flex;
+  justify-content: center;
+  color: #c0f7b7;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  background: radial-gradient(
+    ellipse farthest-corner at 50% 50%,
+    #c0f7b7 0%,
+    #5ac994 1%,
+    #124143 40%,
+    #141b29 70%
+  );
+  background-color: #124143;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  z-index: 2;
+}

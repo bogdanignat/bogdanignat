@@ -1,0 +1,28 @@
+#container_hi {
+  position: absolute;
+  width: auto;
+  text-align: center;
+  top: 20%;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+h1 {
+  color: #ddeb9d;
+  text-align: center;
+}
+
+.high-score {
+  /* position: absolute; */
+  width: 200px;
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  color: #ddeb9d;
+}
+
+#highScoresList {
+  color: #ddeb9d;
+  list-style: none;
+  text-shadow: 0 0 3px red, 0 0 5px #0000ff;
+}
