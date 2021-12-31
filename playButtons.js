@@ -40,7 +40,6 @@ eventCheckBox3.addEventListener('change', function checkFirst() {
     document.querySelector('.learning-div').style.visibility = 'hidden'
     document.querySelector('#message').style.visibility = 'hidden'
     document.querySelector('#after_submit').style.visibility = 'hidden'
-
     console.log('eventCheckBox3')
   }
 })

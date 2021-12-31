@@ -1,4 +1,7 @@
 /* this is the quiz part*/
+#game-module {
+  display: flex;
+}
 
 #play-mess {
   color: #ddeb9d;
@@ -8,10 +11,6 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-}
-
-#game-module {
-  display: flex;
 }
 
 /* questions and answers */
