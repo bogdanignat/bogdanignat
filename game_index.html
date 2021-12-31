@@ -44,7 +44,12 @@
         <select id="continents-id"></select>
         <br />
         <div id="states">SELECT STATE</div>
-        <select id="states-id"></select>
+        <select
+          id="states-id"
+          onmousedown="if(this.options.length>8){this.size=5;}"
+          onchange="this.size=0;"
+          onblur="this.size=0;"
+        ></select>
         <br />
         <div>
           <div id="capitals">THE CAPITAL IS:</div>
