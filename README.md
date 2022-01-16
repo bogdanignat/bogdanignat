@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Bogdan
 - 👀 I’m interested in front end development
-- 🌱 I’m currently learning java script
+- 🌱 I’m currently learning html, css, sass, less, java script
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me: bogdan.ignat@gmail.com
 
